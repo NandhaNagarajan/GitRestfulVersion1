@@ -37,7 +37,7 @@ public class TodoRestServiceWithJPA {
 	}
 
 	@GetMapping(path = "/JPA/user/{username}/detailsByUsername")
-	public List<Todo> getUserDetailsByName(@PathVariable String username) {
+	public List<Todo> getUserDetailsByName(@PathVariable String username){
 		return todoJPARepository.findByUsername(username);
 	}
 
